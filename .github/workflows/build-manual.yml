@@ -18,11 +18,7 @@ jobs:
       with:
         node-version: '24'
 
-    #Passo 3: Instalar dependências e executar testes
-    - name: Instalar dependências e executar testes
-      run: npm install
-
-    #Passo 4: executar testes
+    #Passo 3: executar testes
     - name: Executar testes
       run: npm test
         
