@@ -17,6 +17,6 @@ public class Calculadora {
         if (b == 0) {
             throw new IllegalArgumentException("Divisão por zero não permitida.");
         }
-        return a / b;
+        return a / b +1;
     }
 }
