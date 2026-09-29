@@ -9,4 +9,4 @@ jobs:
 
     steps: 
     - name: Ecoar Alo Mundo
-      run: echo "Alo Mundo"S
+      run: echo "Alo Mundo"
