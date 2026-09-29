@@ -1,0 +1,33 @@
+name: Testes Automatizados
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Passo 1: Checkout do código
+      - name: Checkout do código
+        uses: actions/checkout@v5
+
+      # Passo 2: Configurar o Java
+      - name: Configurar o Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'maven'
+
+      # Passo 3: Executar testes
+      - name: Executar testes
+        run: mvn test
+        working-directory: ./demo
+
+      # Passo 4: Gerar o pacote
+      - name: Gerar pacote
+        run: mvn package
+        working-directory: ./demo
