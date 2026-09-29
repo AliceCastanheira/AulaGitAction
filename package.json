@@ -1,0 +1,13 @@
+{
+  "name": "aula-git-action",
+  "version": "1.0.0",
+  "description": "Projeto simples para estudar GitHub Actions",
+  "main": "src/calculadora.js",
+  "scripts": {
+    "test": "jest",
+    "build": "node src/calculadora.js"
+  },
+  "devDependencies": {
+    "jest": "^30.0.0"
+  }
+}
