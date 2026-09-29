@@ -23,7 +23,9 @@ jobs:
       # Passo 3: Executar testes
       - name: Executar testes
         run: mvn test
+        working-directory: ./demo
 
       # Passo 4: Gerar o pacote
       - name: Gerar pacote
         run: mvn package
+        working-directory: ./demo
