@@ -10,11 +10,11 @@ jobs:
     steps: 
     #Passo 1: Checkout do código
     - name: Checkout do código 
-      uses: actions/checkout@v2
+      uses: actions/checkout@v5
     
     #Passo 2: Configurar o Node.js
     - name: Configurar o Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v5
       with:
         node-version: '24'
 
